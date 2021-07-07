@@ -50,13 +50,15 @@ namespace WindowsFormsApp1.Metodos
             double aux = vecAnterior[0] + h / 2;
             vecAnterior[3] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //K3
-            vecAnterior[4] = vecAnterior[3];
-            //vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
+            //vecAnterior[4] = vecAnterior[3];
+            vecAnterior[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //K4
             aux = vecAnterior[0] + h;
             vecAnterior[5] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //Q(i+1)
-            vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 4*vecAnterior[3]+ vecAnterior[5]);
+            //vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 4*vecAnterior[3]+ vecAnterior[5]);
+            vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 2*vecAnterior[3]+ 2*vecAnterior[4] + vecAnterior[5]);
+
 
             iteraciones.Add(vecAnterior);
             controlador.xGraficoRK.Add(vecAnterior[0]);
@@ -80,16 +82,16 @@ namespace WindowsFormsApp1.Metodos
                 vecActual[3] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
 
                 //K3
-                vecActual[4] = vecActual[3];
-                //vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
+                //vecActual[4] = vecActual[3];
+                vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
 
                 //K4
                 aux = vecActual[0] + h;
                 vecActual[5] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
-                
-                //Q(i+1)
-                vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 4 * vecActual[3] + vecActual[5]);
 
+                //Q(i+1)
+                //vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 4 * vecActual[3] + vecActual[5]);
+                vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 2*vecActual[3] + 2*vecActual[4] + vecActual[5]);
 
                 iteraciones.Add(vecActual);
                 controlador.xGraficoRK.Add(vecActual[0]);
@@ -121,12 +123,15 @@ namespace WindowsFormsApp1.Metodos
             double aux = vecAnterior[0] + h / 2;
             vecAnterior[3] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //K3
-            //vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
+            //vecAnterior[4] = vecAnterior[3];
+            vecAnterior[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //K4
             aux = vecAnterior[0] + h;
             vecAnterior[5] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
             //Q(i+1)
-            vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 4 * vecAnterior[3] + vecAnterior[5]);
+            //vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 4 * vecAnterior[3] + vecAnterior[5]);
+            vecAnterior[6] = vecAnterior[1] + (h / 6) * (vecAnterior[2] + 2 * vecAnterior[3] + 2 * vecAnterior[4] + vecAnterior[5]);
+
 
             resultados[0] = vecAnterior[1];
 
@@ -144,13 +149,15 @@ namespace WindowsFormsApp1.Metodos
                 aux = vecActual[0] + h / 2;
                 vecActual[3] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
                 //K3
-                vecActual[4] = vecActual[3];
-                //vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
+                //vecActual[4] = vecActual[3];
+                vecActual[4] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
                 //K4
                 aux = vecActual[0] + h;
                 vecActual[5] = lambda * A * ((100 * (L - x) * (20 - aux)) / (100 - x * aux));
                 //Q(i+1)
-                vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 4 * vecActual[3] + vecActual[5]);
+                //vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 4 * vecActual[3] + vecActual[5]);
+                vecActual[6] = vecActual[1] + (h / 6) * (vecActual[2] + 2 * vecActual[3] + 2 * vecActual[4] + vecActual[5]);
+
 
 
                 resultados[i] = vecActual[1];

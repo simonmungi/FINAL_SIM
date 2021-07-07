@@ -74,8 +74,9 @@ namespace WindowsFormsApp1
                     form.cargarGrillaPC();
                     break;
                 case "Analitico":
-                    IEstrategia an = new EstrategiaAnalitica(this);
+                    EstrategiaAnalitica an = new EstrategiaAnalitica(this);
                     an.calcular();
+                    solAnalitica = an.calcular(tLimite).ToString();
                     break;
 
             }

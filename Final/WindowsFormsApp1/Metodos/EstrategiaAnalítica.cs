@@ -40,6 +40,7 @@ namespace WindowsFormsApp1.Metodos
 
                 controlador.xGraficoAN.Add(vecActual[0]);
                 controlador.yGraficoAN.Add(vecActual[1]);
+                Console.WriteLine(vecActual[1]);
             }
 
             controlador.solAnalitica = Math.Round(vecActual[1],4).ToString();

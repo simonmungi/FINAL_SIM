@@ -14,7 +14,6 @@ C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\bin\Debug\WindowsFormsAp
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\Simon\Desktop\FINAL_SIM\Final\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache

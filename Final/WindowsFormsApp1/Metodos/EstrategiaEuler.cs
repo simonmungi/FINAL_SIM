@@ -51,7 +51,7 @@ namespace WindowsFormsApp1.Metodos
             controlador.yGraficoEuler.Add(vecAnterior[1]);
 
 
-            while (vecAnterior[0]<= tLimite)
+            while (vecAnterior[0]< tLimite)
             {
                 vecActual = new double[4];
 
