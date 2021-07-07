@@ -35,6 +35,7 @@ namespace WindowsFormsApp1.Metodos
             controlador.xGraficoRK = new List<double>();
             controlador.yGraficoRS = new List<double>();
 
+            EstrategiaAnalitica an = new EstrategiaAnalitica(controlador);
 
             vecAnterior = new double[7];
             vecActual = new double[7];
@@ -43,7 +44,7 @@ namespace WindowsFormsApp1.Metodos
             //t
             vecAnterior[0] = t0;
             //Q
-            vecAnterior[1] = Q0;
+            vecAnterior[1] = an.calcular(t0);
             //K1
             vecAnterior[2] = lambda * A * ((100 * (L - x) * (20 - vecAnterior[0])) / (100 - x * vecAnterior[0]));
             //K2

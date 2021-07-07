@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
         private void cargarValores()
         {
             this.controlador.h = Convert.ToDouble(this.txtH.Text);
+            this.controlador.setT0(Convert.ToDouble(this.txtt0.Text));
             this.controlador.setTLimite(Convert.ToDouble(this.txtTFinal.Text));
         }
 
@@ -211,5 +212,6 @@ namespace WindowsFormsApp1
             Chart1.Series[3].Points.Clear();
 
         }
+
     }
 }

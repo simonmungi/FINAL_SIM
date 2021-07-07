@@ -29,9 +29,9 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dgvEuler = new System.Windows.Forms.DataGridView();
             this.Chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -56,10 +56,8 @@ namespace WindowsFormsApp1
             this.label7 = new System.Windows.Forms.Label();
             this.txtTFinal = new System.Windows.Forms.TextBox();
             this.txtt0 = new System.Windows.Forms.TextBox();
-            this.txtQ0 = new System.Windows.Forms.TextBox();
             this.txtH = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblH = new System.Windows.Forms.Label();
             this.dgvRS = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -89,16 +87,16 @@ namespace WindowsFormsApp1
             // 
             // Chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.Chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.Chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.Chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.Chart1.Legends.Add(legend1);
             this.Chart1.Location = new System.Drawing.Point(693, 13);
             this.Chart1.Name = "Chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.Chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.Chart1.Series.Add(series1);
             this.Chart1.Size = new System.Drawing.Size(665, 627);
             this.Chart1.TabIndex = 1;
             this.Chart1.Text = "chart1";
@@ -126,10 +124,8 @@ namespace WindowsFormsApp1
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtTFinal);
             this.groupBox1.Controls.Add(this.txtt0);
-            this.groupBox1.Controls.Add(this.txtQ0);
             this.groupBox1.Controls.Add(this.txtH);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.lblH);
             this.groupBox1.Location = new System.Drawing.Point(33, 13);
             this.groupBox1.Name = "groupBox1";
@@ -243,7 +239,7 @@ namespace WindowsFormsApp1
             // lblIteraciones
             // 
             this.lblIteraciones.AutoSize = true;
-            this.lblIteraciones.Location = new System.Drawing.Point(102, 109);
+            this.lblIteraciones.Location = new System.Drawing.Point(102, 127);
             this.lblIteraciones.Name = "lblIteraciones";
             this.lblIteraciones.Size = new System.Drawing.Size(16, 13);
             this.lblIteraciones.TabIndex = 23;
@@ -252,7 +248,7 @@ namespace WindowsFormsApp1
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 109);
+            this.label4.Location = new System.Drawing.Point(8, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 13);
             this.label4.TabIndex = 22;
@@ -315,7 +311,7 @@ namespace WindowsFormsApp1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 61);
+            this.label7.Location = new System.Drawing.Point(7, 87);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 15;
@@ -323,7 +319,7 @@ namespace WindowsFormsApp1
             // 
             // txtTFinal
             // 
-            this.txtTFinal.Location = new System.Drawing.Point(26, 58);
+            this.txtTFinal.Location = new System.Drawing.Point(26, 84);
             this.txtTFinal.Name = "txtTFinal";
             this.txtTFinal.Size = new System.Drawing.Size(56, 20);
             this.txtTFinal.TabIndex = 14;
@@ -331,19 +327,11 @@ namespace WindowsFormsApp1
             // 
             // txtt0
             // 
-            this.txtt0.Location = new System.Drawing.Point(126, 32);
+            this.txtt0.Location = new System.Drawing.Point(26, 58);
             this.txtt0.Name = "txtt0";
             this.txtt0.Size = new System.Drawing.Size(56, 20);
             this.txtt0.TabIndex = 13;
             this.txtt0.Text = "0";
-            // 
-            // txtQ0
-            // 
-            this.txtQ0.Location = new System.Drawing.Point(126, 58);
-            this.txtQ0.Name = "txtQ0";
-            this.txtQ0.Size = new System.Drawing.Size(56, 20);
-            this.txtQ0.TabIndex = 12;
-            this.txtQ0.Text = "0";
             // 
             // txtH
             // 
@@ -356,20 +344,11 @@ namespace WindowsFormsApp1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(104, 37);
+            this.label6.Location = new System.Drawing.Point(4, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(16, 13);
             this.label6.TabIndex = 6;
             this.label6.Text = "t0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(99, 61);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 13);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Q0";
             // 
             // lblH
             // 
@@ -481,10 +460,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataVisualization.Charting.Chart Chart1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtt0;
-        private System.Windows.Forms.TextBox txtQ0;
         private System.Windows.Forms.TextBox txtH;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblH;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtTFinal;

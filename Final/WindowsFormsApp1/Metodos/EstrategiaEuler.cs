@@ -38,11 +38,11 @@ namespace WindowsFormsApp1.Metodos
             controlador.xGraficoEuler = new List<double>();
             controlador.yGraficoEuler = new List<double>();
 
-
+            EstrategiaAnalitica an = new EstrategiaAnalitica(controlador);
 
             //inicializo
             vecAnterior[0] = t0;
-            vecAnterior[1] = Q0;
+            vecAnterior[1] = an.calcular(t0);
             vecAnterior[2] = h*func(vecAnterior[0]);
             vecAnterior[3] = vecAnterior[2] + vecAnterior[1];
 
