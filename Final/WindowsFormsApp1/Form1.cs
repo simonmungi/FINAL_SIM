@@ -61,6 +61,7 @@ namespace WindowsFormsApp1
             controlador.calcular("Euler");
 
             lblSolEuler.Text = controlador.solEuler;
+            btnGrafEuler.Enabled = true;
 
         }
 
@@ -71,6 +72,7 @@ namespace WindowsFormsApp1
             controlador.calcular("R-K");
 
             lblSolRS.Text = controlador.solRS;
+            btnGrafRK.Enabled = true;
         }
 
         private void btnPC_Click(object sender, EventArgs e)
@@ -80,6 +82,7 @@ namespace WindowsFormsApp1
             controlador.calcular("P-C");
 
             lblSolPC.Text = controlador.solPC;
+            btnGrafPC.Enabled = true;
         }
 
         private void btnAnalitica_Click(object sender, EventArgs e)
@@ -89,6 +92,7 @@ namespace WindowsFormsApp1
             controlador.calcular("Analitico");
 
             lblSolAnalitica.Text = controlador.solAnalitica;
+            btnGrafAnalitico.Enabled = true;
         }
 
         private void cargarValores()
